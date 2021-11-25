@@ -13,9 +13,14 @@ from werkzeug.security import generate_password_hash
 
 import os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
+import tensorflow as tf
 import numpy as np
 from keras.models import load_model
 from keras.preprocessing import image
+
+
+physical_devices = tf.config.list_physical_devices('GPU')
+tf.config.experimental.set_memory_growth(physical_devices[0], True)
 
 
 bp = Blueprint("input", __name__, url_prefix="/input")
