@@ -14,6 +14,7 @@ from werkzeug.security import generate_password_hash
 bp = Blueprint("output", __name__, url_prefix="/output")
 
 @bp.route("/equipment", methods=("GET", "POST"))
-def enterinfo():
-    return render_template("output/output.html")
+def enterinfo(pred_dict):
+    
+    return render_template("output/output.html", pred_dict)
 

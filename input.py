@@ -26,6 +26,7 @@ def enterinfo():
     return render_template("input/enterinfo.html")
 
 
+
 # I started here by loading my saved model
 model = load_model('data/model.h5') # set this to your own directory.
 
@@ -50,9 +51,11 @@ def predict_image(image_path):
             
             
 # test model by predicting a sample data from the test set.
-prediction = predict_image("data/Image_data/test/Rowing Machine/image19.jpg")
+prediction = predict_image("data/Image_data/val/Upright bike/image10.jpg")
 
-print(prediction)
+# prediction = predict_image("data/1612991218-best-rowing-machines-1612991205.jpg")
+
+print("Predicted Equipment : ",prediction)
 
 
 
