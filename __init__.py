@@ -1,7 +1,8 @@
 import os
 
 from flask import Flask
-import input
+from flask import render_template
+import logging
 
 
 
@@ -18,13 +19,30 @@ DEBUG = app.config['DEBUG']
 TESTING = app.config['TESTING']
 TEMPLATES_AUTO_RELOAD = app.config["TEMPLATES_AUTO_RELOAD"]
 
+####################################################################
+# Routing details - URL routing seen on client browser
+####################################################################
 
 @app.route("/")
 def index():
-    return "Hello, Your Server is up and running!"
+    return render_template("input.html")
 
-# apply the blueprints to the app
-app.register_blueprint(input.bp)
-app.add_url_rule("/", endpoint="index")
+@app.route("/result", methods=['POST', 'GET'])
+def result():
+    return render_template("result.html")
 
-app.run(HOST,PORT)
+##############################################################################
+# Main Application: Execution of FreedomOfSearch Application starts from here. 
+##############################################################################
+
+
+if(__name__ == "__main__"):
+    
+    # defining the log and application configurations 
+    logging.basicConfig(filename='Logs/app.log', level=logging.INFO)
+    logging.info('info_app -- executing main()')
+    logging.info('info_app -- invoking server 127.0.0.1, port = 5000')
+    app.run(debug=DEBUG)
+    #app.run(HOST,PORT)
+    
+
