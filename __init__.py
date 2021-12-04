@@ -39,7 +39,7 @@ def result():
 if(__name__ == "__main__"):
     
     # defining the log and application configurations 
-    logging.basicConfig(filename='Logs/app.log', level=logging.INFO)
+    logging.basicConfig(filename='logs/app.log', level=logging.INFO)
     logging.info('info_app -- executing main()')
     logging.info('info_app -- invoking server 127.0.0.1, port = 5000')
     app.run(debug=DEBUG)
