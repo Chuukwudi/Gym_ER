@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h2>{% block title %}Upload a picture{% endblock %}</h2>
+{% endblock %}
+
+{% block content %}
+  <form  action="{{ url_for('result') }}"  method = "POST"> 
+    <label for="image">Image</label>
+    <input type="file" id="img" name="image" accept="image/*">
+    <input type="submit">
+  </form>
+{% endblock %}
+
+
