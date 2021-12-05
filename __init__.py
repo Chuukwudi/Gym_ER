@@ -51,7 +51,7 @@ def result():
 
 
 ##############################################################################
-# Main Application: Execution of FreedomOfSearch Application starts from here. 
+# Main Application: Execution of Application starts from here. 
 ##############################################################################
 
 
