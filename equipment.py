@@ -76,10 +76,3 @@ class ML_Model:
         for i in range(self.no_of_classes):
             if result[0][i] == 1:
                 return self.classes[i]
-
-    # # test model by predicting a sample data from the test set.
-    # prediction = predict_image("data/Image_data/val/Upright bike/image10.jpg")
-    #
-    # # prediction = predict_image("data/1612991218-best-rowing-machines-1612991205.jpg")
-    #
-    # print("Predicted Equipment : ",prediction)
