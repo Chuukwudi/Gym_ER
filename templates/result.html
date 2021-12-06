@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h2>{% block title %}Equipment Information{% endblock %}</h2>
+{% endblock %}
+
+{% block content %}
+  <form action="post" >
+    Predicted Equipment  - {{equip_info}}
+  </form>
+{% endblock %}

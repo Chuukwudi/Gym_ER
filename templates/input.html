@@ -5,12 +5,12 @@
 {% endblock %}
 
 {% block content %}
-  <form action="post">
+  <form  action="{{ url_for('result') }}"  method = "POST" enctype="multipart/form-data"> 
     <label for="image">Image</label>
-    <input type="file" id="img" name="image" accept="image/*">
+    <input type="file" id="image" name="image" accept="image/*">
     <input type="submit">
-  </form>
+  </form>   
+
 {% endblock %}
 
-# Save the image - from the form 
 
