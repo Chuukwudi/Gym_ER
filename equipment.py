@@ -8,7 +8,7 @@ from keras.models import load_model
 from keras.preprocessing import image
 
 physical_devices = tf.config.list_physical_devices('GPU')
-#tf.config.experimental.set_memory_growth(physical_devices[0], True)
+tf.config.experimental.set_memory_growth(physical_devices[0], True)
 
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
@@ -56,7 +56,8 @@ class ML_Model:
     
     def __init__(self,image_path):
         # I started here by loading my saved model
-        self.model = load_model('data/model.h5')  # set this to your own directory.
+        # self.model = load_model('data/model.h5')  # set this to your own directory.
+        self.model = load_model('data/model_better.h5') 
         self.image_path = image_path
     
     def load_classes(self):
