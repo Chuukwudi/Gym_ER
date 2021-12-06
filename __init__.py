@@ -56,9 +56,9 @@ def result():
 
 
 if(__name__ == "__main__"):
-    
+        
     # defining the log and application configurations 
-    logging.basicConfig(filename='logs/app.log', level=logging.INFO)
+    logging.basicConfig(filename='logs/app.log', level=logging.INFO, force=True)
     logging.info('Gym_ER -- executing main()')
     logging.info('Gym_ER -- invoking server 127.0.0.1, port = 5000')
     app.run(debug=DEBUG)
