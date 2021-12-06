@@ -7,8 +7,9 @@ import numpy as np
 from keras.models import load_model
 from keras.preprocessing import image
 
-physical_devices = tf.config.list_physical_devices('GPU')
-#tf.config.experimental.set_memory_growth(physical_devices[0], True)
+
+gpu_devices = tf.config.experimental.list_physical_devices('GPU')
+for device in gpu_devices: tf.config.experimental.set_memory_growth(device, True)
 
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
@@ -69,7 +70,7 @@ class ML_Model:
     def predict_image(self):
         
         self.load_classes()
-        test_image = image.load_img(self.image_path, target_size=(200, 200))
+        test_image = image.load_img(self.image_path, target_size=(512, 288))
         test_image = np.expand_dims(test_image, axis=0)
         result = self.model.predict(test_image)
         
