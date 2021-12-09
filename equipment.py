@@ -9,7 +9,6 @@ import ast
 from keras.models import load_model
 from keras.preprocessing import image
 
-
 gpu_devices = tf.config.experimental.list_physical_devices('GPU')
 for device in gpu_devices: tf.config.experimental.set_memory_growth(device, True)
 
@@ -18,52 +17,39 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
 class Equipment:
     
-    EQUIP = {
-        'name':"" ,
-        'image': "",
-        'video_link': "",
-        'muscle_group': "",
-        'additional_info': ""}
-    image = ''
-    pred_equip = ''
-    
+    dict_file = 'equipment_info.txt'
 
+    
     
     def __init__(self, image):
         self.image = image
-        self.dict_file = 'equipment_info.txt'
+        self.dictionary = self.get_dict()
 
-        
-    
-   
-
-    def read_dict(self, dict_file):
+    def get_dict(self):
         """ The dictionary file is read and returned as a python dictionary type"""
-        with open(dict_file, 'r') as f:
+        with open(self.dict_file, 'r') as f:
             s = f.read()
-            self.read_dict = ast.literal_eval(s)
-            return self.read_dict
+            read_dict = ast.literal_eval(s)
+            return read_dict
     
-    
-    
-    
-    def predict_equip(self):
+    def get_predicted_equip(self):
+        print(self.image)
+        
         self.pred_equip = ML_Model(self.image).predict_image()
+        print(self.pred_equip)
         return self.pred_equip
     
-    def map_equip(self, pred_equip):
-        
-        """ This function gets the key value pairs from what has been predicted"""
-        
-        dictionary = self.read_dict(self.dict_file)
+    def get_predcited_equip_info(self): 
+        """ This function gets the key value pairs from what has been predicted"""  
+           
+        dictionary = self.get_dict()
+        pred_equip = self.get_predicted_equip()     
         for item in dictionary:
+            print ("Item : ", item)
             if item == pred_equip:
+                print ("pred_equip : ", pred_equip)
                 return dictionary[item]
-            
     
-    def get_equip(self):
-        pass
-
 
 class ML_Model:
     
@@ -72,9 +58,9 @@ class ML_Model:
     model = ''
     image_path = ''
     
-    def __init__(self,image_path):
+    def __init__(self, image_path):
         # I started here by loading my saved model
-        self.model = load_model('data/model.h5')  # set this to your own directory.
+        self.model = load_model('data/model_better.h5')  # set this to your own directory.
         self.image_path = image_path
     
     def load_classes(self):
@@ -106,17 +92,5 @@ class ML_Model:
                 if result[0][i] == np.max(result):
                     return self.classes[i]
         else:
-            return "Please, choose an image from the gym dataset"
-        
-
-# Testing the functions I have just written
-equippy = Equipment('data/Image_data/train/Ab trainer/image12.jpg')
-pred_equip = equippy.predict_equip()
-equip_info = equippy.map_equip(pred_equip)
-
-print(equip_info)
-
-
-
-
+            return {'error': "Please, choose an image from the gym dataset"}
 
