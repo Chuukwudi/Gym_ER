@@ -1,0 +1,129 @@
+{
+	"Ab trainer": {
+	
+			'image': 			"data/photos/ab-trainer.jpg",
+			'video_link': 		"https://www.youtube.com/watch?v=F4FZm4Y5-5Y",
+			'muscle_group': 	"upper, middle and lower abs, obliques, biceps, triceps, glutes, chest and legs.",
+			'additional_info': 	"Designed to give your entire core a super targeted workout. " 
+								"In just minutes a day, you can tone, tighten and sculpt your "
+								"mid section, working your upper, middle and lower abs and "
+								"obliques. With 3 adjustable resistance settings, it is perfect "
+								"for all ages and fitness levels."
+								
+			
+			},
+	
+	
+	'Hitmill X': {
+	
+			'image': 			"data/photos/hitmill_x.jpg",
+			'video_link': 		"https://www.youtube.com/watch?v=9h7e1uVi7_E",
+			'muscle_group': 	"lower and upper body, capture's the benefits of pushing, pulling, "
+								"driving, sprinting with resistance driving up metabolic intensity. ",
+			'additional_info': 	"Unlike a standard treadmill, these machines are self-powered "
+								"speed and strength training tools designed to build explosive power when used in "
+								"a High-Intensity Interval Training program. These High-Intensity machines deliver "
+								"an effective resistance training platform that captures the benefits of speed and "
+								"agility training, lateral training and sled training. Users can now push, drive and "
+								"sprint with the resistance of a sled, safely and with a smaller footprint. "
+								"These easy to use tools allow users to drive up metabolic intensity and make for a "
+								"more space efficient solution to alternative training methods. Gear up for one tough "
+								"and rewarding HIIT workout that members will love to hate."
+			
+			},
+
+	'Recumbent exercise bike': {
+	
+			'image': 			"data/photos/recumbent_exercise_bike.jpg",
+			'video_link': 		"https://www.youtube.com/watch?v=XugMoMDxyhM",
+			'muscle_group': 	"hamstring, quadriceps, calves, gluteus maximus, abdominals, and tibilais anterior",
+			'additional_info': 	"A recumbent bike is an exercise bike that places its user in a reclining position "
+								"with the pedals out in front of them. The recumbent bike is great for users with "
+								"back problems because there is less pressure on the lower back due to the "
+								"laid-back position."
+			
+			},
+	
+	'Rowing Machine': {
+	
+			'image': 			"data/photos/rowing_machine.jpg",
+			'video_link': 		"https://www.youtube.com/watch?v=w2hGNM4l5so",
+			'muscle_group': 	"legs, arms and lower back",
+			'additional_info': 	"It is also known as the rower. The particular piece of equipment trains your "
+								"body in several different ways. It is great for strengthening your legs and "
+								"lower back and also you get hell of a training in cardio."
+			
+			},
+	
+	'Thread mill': {
+	
+			'image': 			"data/photos/thread_mill.jpeg",
+			'video_link': 		"https://www.youtube.com/watch?v=aS1vwToqa1Y",
+			'muscle_group': 	"legs, whole body",
+			'additional_info': 	"Without a doubt, the most common cardio piece of equipment in every gym. "
+								"It’s basically a piece of machine designed for running in the same space "
+								"via the use of a rotating belt. This actually dates back centuries to "
+								"standard mills, which were manually operated by animals or humans. They "
+								"usually run either via a flywheel or, more commonly, via an electric motor. "
+			
+			},
+	
+	'Unknown': {
+	
+			'image': "data/photos/",
+			'video_link': "",
+			'muscle_group': "",
+			'additional_info': ""
+			
+			},
+	
+	'Upright bike': {
+	
+			'image': 			"data/photos/upright_bike.jpg",
+			'video_link': 		"https://www.youtube.com/watch?v=jhPqTyejY_0",
+			'muscle_group': 	"hamstring, quadriceps, calves, gluteus maximus, abdominals, tibilais anterior, core",
+			'additional_info': 	"An upright bike is an exercise bike where the user sits in an upright position, "
+								"similar to a road bicycle, with the pedals almost directly below the seat. The "
+								"upright position helps to simulate real road bike riding and engages the core "
+								"more than a recumbent bike."
+			
+			},
+	
+	'Versa Climber': {
+	
+			'image': 			"data/photos/versa_climber.jpg",
+			'video_link': 		"https://www.youtube.com/watch?v=n8YVmOmTZn8",
+			'muscle_group': 	"arms, legs, chest, back, shoulders, and more",
+			'additional_info': 	"The Versaclimber is the leading climbing exercise machine that offers a low "
+								"impact total-body workout. Launched in 1981, the Versaclimber is a piece of "
+								"equipment used in health clubs, military training, sports medicine facilities, "
+								"corporate and personal gyms all over the world. While many other forms of "
+								"cardio such as the treadmill or spin bike only work the lower body and require "
+								"longer workout times to burn calories, the Versaclimber provides a total-body "
+								"exercise, working the muscles in your arms, legs, chest, back, shoulders, and "
+								"more, in one fluid motion. The machine forces your body to work in a contra-lateral "
+								"way – meaning your right arm needs to work with your left leg and vice versa – "
+								"targeting muscle groups that aren’t activated by other workouts. "
+								
+			
+			},
+
+
+	
+	'Weight Tree': {
+	
+			'image': 			"data/photos/weight_tree.jpg",
+			'video_link': 		"https://www.youtube.com/watch?v=FIgF9D70c-s",
+			'muscle_group': 	"depends on what equipment they are placed on",
+			'additional_info': 	"A plate tree is an upright post with pegs coming out the side to store weight "
+								"plates on. The shape looks like a tree which is where the name comes from. "
+								"Plate trees are great for plate organisation which keeps your gym tidy and can "
+								"save time when changing bar weights."
+								
+			 }
+			
+
+
+}
+
+	
