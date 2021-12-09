@@ -8,9 +8,23 @@
   <form action="post" >
    <h1> Predicted Equipment  </h1>
 
+
+<img src={{equip_info.get('image')}} alt="image">
+
+
 <p> Name 			: - {{equip_info.get('name')}} </p>
 
-</p> Muscle Group  	: - {{equip_info.get('muscle_group')}}</p>
+<h1>Video</h1>
+
+<iframe width="420" height="345" src={{equip_info.get('video_link')}}>
+</iframe>
+
+</p> Muscles trained are  	: - {{equip_info.get('muscle_group')}}</p>
+
+
+
+<h3> Additional Information </h3>
+</p> {{equip_info.get('additional_info')}}</p>
 
   </form>
 
