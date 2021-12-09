@@ -1,6 +1,7 @@
 {
 	"Ab trainer": {
 	
+			'name': 			"Ab trainer",
 			'image': 			"data/photos/ab-trainer.jpg",
 			'video_link': 		"https://www.youtube.com/watch?v=F4FZm4Y5-5Y",
 			'muscle_group': 	"upper, middle and lower abs, obliques, biceps, triceps, glutes, chest and legs.",
@@ -16,6 +17,7 @@
 	
 	'Hitmill X': {
 	
+			'name': 			"Hitmill X",
 			'image': 			"data/photos/hitmill_x.jpg",
 			'video_link': 		"https://www.youtube.com/watch?v=9h7e1uVi7_E",
 			'muscle_group': 	"lower and upper body, capture's the benefits of pushing, pulling, "
@@ -34,6 +36,7 @@
 
 	'Recumbent exercise bike': {
 	
+			'name': 			"Recumbent exercise bike",
 			'image': 			"data/photos/recumbent_exercise_bike.jpg",
 			'video_link': 		"https://www.youtube.com/watch?v=XugMoMDxyhM",
 			'muscle_group': 	"hamstring, quadriceps, calves, gluteus maximus, abdominals, and tibilais anterior",
@@ -46,6 +49,7 @@
 	
 	'Rowing Machine': {
 	
+			'name': 			"Rowing Machine",
 			'image': 			"data/photos/rowing_machine.jpg",
 			'video_link': 		"https://www.youtube.com/watch?v=w2hGNM4l5so",
 			'muscle_group': 	"legs, arms and lower back",
@@ -57,6 +61,7 @@
 	
 	'Thread mill': {
 	
+			'name': 			"Thread mill",
 			'image': 			"data/photos/thread_mill.jpeg",
 			'video_link': 		"https://www.youtube.com/watch?v=aS1vwToqa1Y",
 			'muscle_group': 	"legs, whole body",
@@ -70,6 +75,7 @@
 	
 	'Unknown': {
 	
+			'name': 			"Unknown",
 			'image': "data/photos/",
 			'video_link': "",
 			'muscle_group': "",
@@ -79,6 +85,7 @@
 	
 	'Upright bike': {
 	
+			'name': 			"Upright bike",
 			'image': 			"data/photos/upright_bike.jpg",
 			'video_link': 		"https://www.youtube.com/watch?v=jhPqTyejY_0",
 			'muscle_group': 	"hamstring, quadriceps, calves, gluteus maximus, abdominals, tibilais anterior, core",
@@ -91,6 +98,7 @@
 	
 	'Versa Climber': {
 	
+			'name': 			"Versa Climber",
 			'image': 			"data/photos/versa_climber.jpg",
 			'video_link': 		"https://www.youtube.com/watch?v=n8YVmOmTZn8",
 			'muscle_group': 	"arms, legs, chest, back, shoulders, and more",
@@ -112,6 +120,7 @@
 	
 	'Weight Tree': {
 	
+			'name': 			"Weight Tree",
 			'image': 			"data/photos/weight_tree.jpg",
 			'video_link': 		"https://www.youtube.com/watch?v=FIgF9D70c-s",
 			'muscle_group': 	"depends on what equipment they are placed on",
