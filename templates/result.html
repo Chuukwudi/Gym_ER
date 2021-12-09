@@ -6,6 +6,12 @@
 
 {% block content %}
   <form action="post" >
-    Predicted Equipment  - {{equip_info}}
+   <h1> Predicted Equipment  </h1>
+
+<p> Name 			: - {{equip_info.get('name')}} </p>
+
+</p> Muscle Group  	: - {{equip_info.get('muscle_group')}}</p>
+
   </form>
+
 {% endblock %}
