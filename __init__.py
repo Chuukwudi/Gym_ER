@@ -36,24 +36,19 @@ def result():
     # image file uploaded by the user
     image = request.files['image']
     image.save(IMAGE_UPLOAD_PATH)
-    #image = request.form['image'] 
-    # print(image)
-    logging.info('Image Uploaded - ',IMAGE_UPLOAD_PATH)
-    
-    
+    logging.info('Image Uploaded - ', IMAGE_UPLOAD_PATH)
     
     import equipment
-    # equip_info is a dict 
-    # equip_info = equipment.Equipment(image).get_equip()
-    equip_info = equipment.Equipment(IMAGE_UPLOAD_PATH).predict_equip()
-    return render_template("result.html" , equip_info = equip_info)
+
+    result = equipment.Equipment(IMAGE_UPLOAD_PATH).get_predcited_equip_info()
+    print(result.get('name'))
+    return render_template("result.html" , equip_info=result)
 
 
 
 ##############################################################################
 # Main Application: Execution of Application starts from here. 
 ##############################################################################
-
 
 if(__name__ == "__main__"):
         
