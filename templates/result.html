@@ -9,15 +9,15 @@
    <h1> Predicted Equipment  </h1>
 
 
-<img src={{equip_info.get('image')}} alt="image">
+<img src={{ url_for('static', filename='uploaded_image.png') }} alt="image" width="400" height="512">
 
 
 <p> Name 			: - {{equip_info.get('name')}} </p>
 
 <h1>Video</h1>
 
-<iframe width="420" height="345" src={{equip_info.get('video_link')}}>
-</iframe>
+<iframe src="{{equip_info.get('video_link')}}" allowfullscreen="" width="100%" frameborder="0"></iframe>
+<a href="{{equip_info.get('video_link')}}"> Click here</a>
 
 </p> Muscles trained are  	: - {{equip_info.get('muscle_group')}}</p>
 

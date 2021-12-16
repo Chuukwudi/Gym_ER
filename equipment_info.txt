@@ -5,11 +5,7 @@
 			'image': 			"data/photos/ab-trainer.jpg",
 			'video_link': 		"https://www.youtube.com/watch?v=F4FZm4Y5-5Y",
 			'muscle_group': 	"upper, middle and lower abs, obliques, biceps, triceps, glutes, chest and legs.",
-			'additional_info': 	"Designed to give your entire core a super targeted workout. " 
-								"In just minutes a day, you can tone, tighten and sculpt your "
-								"mid section, working your upper, middle and lower abs and "
-								"obliques. With 3 adjustable resistance settings, it is perfect "
-								"for all ages and fitness levels."
+			'additional_info': 	"Designed to give your entire core a super targeted workout. In just minutes a day, you can tone, tighten and sculpt your mid section, working your upper, middle and lower abs and obliques. With 3 adjustable resistance settings, it is perfect for all ages and fitness levels."
 								
 			
 			},
@@ -53,9 +49,7 @@
 			'image': 			"data/photos/rowing_machine.jpg",
 			'video_link': 		"https://www.youtube.com/watch?v=w2hGNM4l5so",
 			'muscle_group': 	"legs, arms and lower back",
-			'additional_info': 	"It is also known as the rower. The particular piece of equipment trains your "
-								"body in several different ways. It is great for strengthening your legs and "
-								"lower back and also you get hell of a training in cardio."
+			'additional_info': 	"It is also known as the rower. The particular piece of equipment trains your body in several different ways. It is great for strengthening your legs and lower back and also you get hell of a training in cardio."
 			
 			},
 	
@@ -65,11 +59,7 @@
 			'image': 			"data/photos/thread_mill.jpeg",
 			'video_link': 		"https://www.youtube.com/watch?v=aS1vwToqa1Y",
 			'muscle_group': 	"legs, whole body",
-			'additional_info': 	"Without a doubt, the most common cardio piece of equipment in every gym. "
-								"It’s basically a piece of machine designed for running in the same space "
-								"via the use of a rotating belt. This actually dates back centuries to "
-								"standard mills, which were manually operated by animals or humans. They "
-								"usually run either via a flywheel or, more commonly, via an electric motor. "
+			'additional_info': 	"Without a doubt, the most common cardio piece of equipment in every gym. It is basically a piece of machine designed for running in the same space via the use of a rotating belt. This actually dates back centuries to standard mills, which were manually operated by animals or humans. They usually run either via a flywheel or, more commonly, via an electric motor. "
 			
 			},
 	
