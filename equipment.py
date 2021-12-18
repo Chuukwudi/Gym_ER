@@ -18,8 +18,6 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 class Equipment:
     
     dict_file = 'equipment_info.txt'
-
-    
     
     def __init__(self, image):
         self.image = image

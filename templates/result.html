@@ -1,31 +1,25 @@
 {% extends 'base.html' %}
 
 {% block header %}
-  <h2>{% block title %}Equipment Information{% endblock %}</h2>
+<h2>{% block title %}Equipment Information{% endblock %}</h2>
 {% endblock %}
 
 {% block content %}
-  <form action="post" >
-   <h1> Predicted Equipment  </h1>
+<form action="post">
+	<h1> Predicted Equipment </h1>
 
-<img src="static/{{image}}" alt="image" width="400" height="512">
+	<div>
+		<img src="static/{{image}}" alt="image" width="400" height="512">
+		<p> Name : - {{equip_info.get('name')}} </p>
+		<h1>Video</h1>
+		<iframe width="920" height="500" src="{{video}}" title="YouTube video player" frameborder="0"
+			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+			allowfullscreen></iframe>
+		</p> Muscles trained are : - {{equip_info.get('muscle_group')}}</p>
+		<h3> Additional Information </h3>
+		</p> {{equip_info.get('additional_info')}}</p>
+	</div>
 
-<p> Name 			: - {{equip_info.get('name')}} </p>
-
-<h1>Video</h1>
-
-
-<iframe width="920" height="500" src="{{video}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-
-</p> Muscles trained are  	: - {{equip_info.get('muscle_group')}}</p>
-
-
-
-<h3> Additional Information </h3>
-</p> {{equip_info.get('additional_info')}}</p>
-
-  </form>
+</form>
 
 {% endblock %}

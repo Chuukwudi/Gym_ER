@@ -44,15 +44,14 @@ def result():
     if(result == None):
         return render_template("error.html")
         
-    else :
+    else:
         print(result.get('image'))
-        return render_template("result.html" , equip_info=result, image = result.get('image'), video = result.get('video_link'))
-
-
+        return render_template("result.html" , equip_info=result, image=result.get('image'), video=result.get('video_link'))
 
 ##############################################################################
 # Main Application: Execution of Application starts from here. 
 ##############################################################################
+
 
 if(__name__ == "__main__"):
         
