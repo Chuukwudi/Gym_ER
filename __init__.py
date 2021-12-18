@@ -45,8 +45,8 @@ def result():
         return render_template("error.html")
         
     else :
-        print(result.get('name'))
-        return render_template("result.html" , equip_info=result)
+        print(result.get('image'))
+        return render_template("result.html" , equip_info=result, image = result.get('image'), video = result.get('video_link'))
 
 
 

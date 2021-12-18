@@ -8,16 +8,16 @@
   <form action="post" >
    <h1> Predicted Equipment  </h1>
 
-
-<img src={{ url_for('static', filename='uploaded_image.png') }} alt="image" width="400" height="512">
-
+<img src="static/{{image}}" alt="image" width="400" height="512">
 
 <p> Name 			: - {{equip_info.get('name')}} </p>
 
 <h1>Video</h1>
 
-<iframe src="{{equip_info.get('video_link')}}" allowfullscreen="" width="100%" frameborder="0"></iframe>
-<a href="{{equip_info.get('video_link')}}"> Click here</a>
+
+<iframe width="920" height="500" src="{{video}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
 
 </p> Muscles trained are  	: - {{equip_info.get('muscle_group')}}</p>
 

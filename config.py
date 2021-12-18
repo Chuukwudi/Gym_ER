@@ -8,7 +8,7 @@ class Config:
     '''set base flask configurations
     '''
     STATIC_FOLDER = 'static'
-    IMAGE_UPLOAD_PATH = 'static/uploaded_image.png'
+    IMAGE_UPLOAD_PATH = 'data/uploaded_image.png'
     TEMPLATES_FOLDER = 'templates'
     TEMPLATES_AUTO_RELOAD = True 
     HOST="0.0.0.0"
