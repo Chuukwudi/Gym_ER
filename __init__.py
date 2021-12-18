@@ -41,8 +41,12 @@ def result():
     import equipment
 
     result = equipment.Equipment(IMAGE_UPLOAD_PATH).get_predcited_equip_info()
-    print(result.get('name'))
-    return render_template("result.html" , equip_info=result)
+    if(result == None):
+        return render_template("error.html")
+        
+    else :
+        print(result.get('name'))
+        return render_template("result.html" , equip_info=result)
 
 
 
